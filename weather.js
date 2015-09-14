@@ -7,12 +7,21 @@ var w = 600;
 var h = 400;
 var barPadding = 1;
 
+/*Steps
+
+1. find the body in the DOM
+2. select all the rectangles
+3.count and parse the dataset
+4. create data bound elements (create a placeholder element)
+5. append the element in the placeholder
+6. adjust the attribute of the element
+*/
 
 //append svg to the body with attributes of width = w and height = h
 
 //tell D3 to create an empty SVG element and add it to the DOM:
 var svg = d3.select("body")
-            .append("svg")
+            .append("svg") 
             .attr("width", w)
             .attr("height", h);
 
